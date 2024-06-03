@@ -82,9 +82,9 @@ nav a:hover::after {
 }
 
 .navbar-cont {
-    display: flex; /* Utilizza Flexbox per allineare gli elementi */
-    align-items: center; /* Allinea gli elementi verticalmente al centro */
-    margin: 0 5%; /* Sposta la navbar a destra e sinistra del 10% */
+    display: flex; 
+    align-items: center; 
+    margin: 0 5%; 
     width: 100%;
 }
 .hero {
@@ -234,6 +234,7 @@ a {
     
 }
 
+
 /* Stili per la scrollbar in WebKit */
 ::-webkit-scrollbar {
     width: 12px; /* larghezza della scrollbar */
@@ -314,8 +315,13 @@ a {
     fill: none;
     stroke-width: 2.8;
     stroke-linecap: round;
+    
+  }
+
+  .animate .circle {
     animation: progress 1.5s ease-out forwards;
   }
+  
   
   @keyframes progress {
     0% {
