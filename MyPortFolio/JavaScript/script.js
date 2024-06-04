@@ -5,14 +5,6 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     link.click();
 });
 
-
-document.getElementById('downloadButton').addEventListener('click', function() {
-    const link = document.createElement('a');
-    link.href = 'files/CV.zip';  // URL del file sul server
-    link.download = 'CV.zip';   // Nome del file da scaricare
-    link.click();
-});
-
 window.addEventListener("scroll", function() {
     var skillsSection = document.querySelector("#skills");
     var aboutSection = document.querySelector("#about");
