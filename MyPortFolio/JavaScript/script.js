@@ -1,6 +1,6 @@
 document.getElementById('downloadButton').addEventListener('click', function() {
     const link = document.createElement('a');
-    link.href = 'files/CV.zip';  // URL del file sul server
+    link.href = 'zip/CV.zip';  // URL del file sul server
     link.download = 'CV.zip';   // Nome del file da scaricare
     link.click();
 });
