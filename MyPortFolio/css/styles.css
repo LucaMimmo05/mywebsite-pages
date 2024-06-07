@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap');
 
+
+
+
 html, body {
   margin: 0;
     padding: 0; 
     scroll-behavior: smooth;
+    width: 100%;
     
 }
 
@@ -15,7 +19,7 @@ nav {
     align-self: center;
     left: 0;
     position: fixed;
-    width: 100%;
+    width: 100%; 
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -55,7 +59,15 @@ nav ul {
     
 }
 
-nav a::after {
+#menuToggle {
+  display: none;
+}
+
+
+
+
+
+.navbar-cont a::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -225,6 +237,7 @@ a {
 .content {
     margin: 0 5%;
     
+    
 }
 
 .sec2 {
@@ -235,6 +248,8 @@ a {
     align-items: center;
     
 }
+
+
 
 
 /* Stili per la scrollbar in WebKit */
@@ -666,3 +681,312 @@ a {
       color: white;
       
   }
+
+  @media only screen and (max-width: 400px) {
+
+    
+
+    nav {
+      background-color: black;
+      align-items: center;
+      left: 0;
+      position: fixed;
+      width: 375px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      top: 0;
+      height: 5%;
+      
+  }
+
+  .navbar-cont ul {
+    display: none;
+  }
+  nav h1 {
+    font-family: "League Spartan", Black;
+    font-size: 30px;
+    text-align: center;
+  }
+  .navbar-cont {
+    display: block; 
+    align-items: center; 
+    justify-content: center;
+    margin: 0 5%; 
+    width: 100%;
+      
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero h1 {
+    font-family: "League Spartan", Black;
+    font-size:90px;
+    margin-bottom: 0;
+}
+.title {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  margin :0;
+  display: flex;
+  justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        display: flex;
+}
+
+ .hero-card {
+  display: none;
+} 
+
+
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  margin: 0;
+  justify-content: center;
+}
+
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card i {
+  display: none;
+}
+
+.hero-card::before {
+      width: 0;
+      height: 0;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 30px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #ffffff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  flex-direction: column;
+  position: absolute;
+  width: 300px;
+  margin: 0px 0 0 -31px;
+
+  padding: 100%;
+  
+  
+  background: #000000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+img {
+  display: none;
+}
+
+.sec2 h1 {
+  color: black;
+  font-family: "League Spartan", Black;
+  font-size: 50px;
+  top:0;
+
+}
+
+.br {
+  display: none
+}
+
+.skills-cont {
+  display: flex;
+   flex-direction: column;
+    grid-template-columns: 1fr 69fr 2fr;
+    align-items: center;
+    gap: 0px;
+}
+
+.flex-wrapper {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.single-chart {
+  width: calc(23% - 10px); /* Per fare tre colonne con margini di 10px */
+  margin-bottom: 20px; /* Spazio tra le righe */
+  justify-content: space-around ;
+
+}
+
+.single-chart p {
+  color: #000000;
+  text-align: center;
+  font-family: "League Spartan", Black;
+  font-style: regular;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.sec3 h1 {
+  color: black;
+  font-family: "League Spartan", Black;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 7%;
+}
+
+.about-cont p {
+  padding: 20px;
+  margin-top: 10px;
+  font-family: "League Spartan", Black;
+  font-style: regular;
+  font-size: 20px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+}
+
+}
+
+  
+
+ 
