@@ -919,6 +919,10 @@ img {
     font-size: 50px;
   }
 
+  .about-text {
+    width: 300px;
+  }
+
   .exp {
     width: 200px;
     height: 300px;
@@ -930,7 +934,7 @@ img {
 
   .contacts {
     align-items: center;
-    width: 300px;
+    width: 240px;
   }
 
   .contacts span {
