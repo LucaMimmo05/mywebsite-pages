@@ -975,6 +975,57 @@ img {
   
  }
 
+ @media  screen and (max-width: 768px) {
+  .exp {
+    width: 250px;
+  }
+
+  
+ }
+
+ 
+
+ @media only screen and (max-width: 800px ) and (min-width: 500px) {
+
+  .hero {
+    display: flex;
+    margin: 0;
+    align-items: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .navbar-cont {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 115px;
+  }
+
+  .hero-home {
+    gap: 0;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+  }
+
+  .hero-img {
+    width: 0px;
+    height: 0px;
+  }
+
+  
+
+  img {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+
+ }
+
   
 
  
