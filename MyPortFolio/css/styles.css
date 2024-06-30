@@ -202,6 +202,8 @@ a {
 
 
 #downloadButton {
+  color: black;
+  background-color: white;
   border: 1px solid;
   border-radius: 25px;
   padding: 10px;
