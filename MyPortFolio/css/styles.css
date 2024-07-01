@@ -685,7 +685,7 @@ a {
       
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 650px) {
 
     
 
@@ -987,9 +987,10 @@ img {
 
  
 
- @media only screen and (max-width: 800px ) and (min-width: 500px) {
+ @media only screen and (max-width: 800px ) and (min-width: 650px) {
 
   .hero {
+    justify-content: center;
     display: flex;
     margin: 0;
     align-items: center;
@@ -1024,6 +1025,39 @@ img {
     display: none;
     width: 0px;
     height: 0px;
+  }
+
+  .hero-content {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .title {
+    align-items: center;
+  }
+
+  .sec2 h1 {
+    font-size: 110px;
+  }
+
+  .single-chart {
+    width: calc(25% - 10px);
+  }
+
+  .sec3 h1 {
+    font-size: 110px;
+  }
+
+  .sec4 h1 {
+    font-size: 90px;
+  }
+
+  .contacts h1 {
+    font-size: 110px;
+  }
+
+  .sec5 {
+    justify-content: center;
   }
 
  }
