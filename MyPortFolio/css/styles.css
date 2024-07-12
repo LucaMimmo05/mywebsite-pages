@@ -1048,6 +1048,22 @@ img {
     font-size: 110px;
   }
 
+  .skills-cont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-cont h1 {
+    margin: 0;
+  }
+
+  .flex-wrapper {
+    margin-top: 0;
+  }
+
+  .br {
+    display: none;
+  }
   .sec4 h1 {
     font-size: 90px;
   }
