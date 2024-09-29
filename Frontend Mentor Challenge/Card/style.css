@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: "Hanken Grotesk";
+  flex-direction: column;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+.hero-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+
+.viola-card {
+  background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+  border-radius: 30px;
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  flex-direction: column;
+  display: flex;
+  place-items: center;
+  color: var(--White);
+  z-index: 2;
+}
+
+.circle {
+  display: flex;
+  border-radius: 100px;
+  background: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+}
+
+.circle h1 {
+  color: var(--White);
+  font-size: 60px;
+  margin: 0 auto;
+}
+
+.res {
+  font-size: 20px;
+  color: var(--Light-lavender);
+  margin: 20px 20px;
+}
+
+.circle p {
+  color: var(--Light-lavender);
+  margin-top: -7px;
+  font-size: 12px;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.gre {
+  font-size: 25px;
+  margin: auto;
+}
+
+.foot p {
+  padding: 0 40px 0 40px;
+  margin-top: 15px;
+  color: var(--Light-lavender);
+  font-size: 15px;
+}
+
+.white-card {
+  background-color: var(--White);
+  -webkit-box-shadow: 5px 6px 5px 6px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 5px 6px 5px 6px rgba(0, 0, 0, 0.04);
+  box-shadow: 5px 6px 5px 6px rgba(0, 0, 0, 0.04);
+  border-radius: 30px;
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  flex-direction: column;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  left: -50px;
+}
+
+.sum {
+  font-size: 20px;
+  color: var(--Dark-gray-blue);
+}
+
+.int {
+  margin-left: 60px;
+  margin-right: 15px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--Light-red);
+  opacity: 0.1;
+  border-radius: 10px;
+}
+
+.box1 p {
+  font-size: 15px;
+  color: var(--Light-red);
+  
+}
