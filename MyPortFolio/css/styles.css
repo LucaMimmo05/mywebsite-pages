@@ -1048,7 +1048,7 @@ footer {
 }
 
 
-=======
+
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   img {
     width: 300px;
@@ -1066,4 +1066,4 @@ footer {
     gap:120px;
   }
 }
->>>>>>> 7d20f467674285cbd8f5d8a65e5f6c07b50d5062
+
