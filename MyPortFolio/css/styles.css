@@ -1042,4 +1042,16 @@ footer {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .sec3 h1 {
+    margin-top: 120px;
+  
+}
 
+.sec3 img {
+  width:450px;
+}
+
+.sec3 p {
+  font-size: 25px;
+}
