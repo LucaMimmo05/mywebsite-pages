@@ -28,6 +28,7 @@ window.addEventListener("scroll", function() {
             chart.classList.remove("animate");
         }
     });
+    
 
     circularChartsAbout.forEach(function(chart) {
         if (
