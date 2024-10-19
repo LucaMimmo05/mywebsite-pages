@@ -1013,6 +1013,10 @@ footer {
     gap: 0px;
   }
 
+  .contact-cont h1 {
+    font-size: 120px;
+  }
+
   .contact-cont img {
     width: 400px;
     height: 300px;
