@@ -367,24 +367,27 @@ a {
   margin-top: 7%;
 }
 
-  .about-cont {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin:0;
-    
-  }
-  
-  .about-cont p {
-    padding: 10px ;
-    margin-top: 50px;
-    font-family: "League Spartan", Black;
-    font-style: regular;
-    font-size: 23px;
-    line-height: 1.5;
-    display: flex;
-    align-items: flex-start;
-  }
+.about-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 0;
+}
+
+.about-cont p {
+  padding: 10px;
+  margin-top: 50px;
+  font-family: "League Spartan", Black;
+  font-style: regular;
+<<<<<<< HEAD
+  font-size: 25px;
+=======
+  font-size: 23px;
+>>>>>>> 7d20f467674285cbd8f5d8a65e5f6c07b50d5062
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+}
 
 .sec4 {
   width: 100%;
@@ -981,9 +984,86 @@ footer {
   .sec5 {
     justify-content: center;
   }
+}
 
- }
 
-  
+@media only screen and (min-width: 1000px) and (max-width: 1439px) {
+  .hero-img img {
+    width: 380px;
+    height: 401px;
+  }
+  .hero h1 {
+    font-size: 120px;
+  }
+  .hero-img {
+    width: 380px;
+    height: 401px;
+  }
+  .about-cont {
+    gap: 0;
+  }
+  .about-cont img {
+    width: 300px;
+    height: 400px;
+  }
+  .about-cont p {
+    font-size: 21px;
+  }
 
- 
+  .experience-cont img {
+    display: none;
+  }
+
+  .contact-cont {
+    gap: 0px;
+  }
+
+  .contact-cont img {
+    width: 400px;
+    height: 300px;
+  }
+
+  nav h1 {
+    font-size: 30px;
+  }
+
+  .sec4 h1 {
+    margin-bottom: 30px;
+  }
+
+  .sec2 h1 {
+    font-size: 120px;
+  }
+
+  .hero-content {
+    margin-top: 0px;
+  }
+
+  .hero-home {
+    gap: 150px;
+  }
+  .hero {
+    align-items: center;
+  }
+}
+
+
+=======
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  img {
+    width: 300px;
+  }
+
+  .hero-home {
+    gap: 150px;
+  }
+
+  .experience-cont img {
+    display: none;
+  }
+
+  .contact-cont {
+    gap:120px;
+  }
+}
+>>>>>>> 7d20f467674285cbd8f5d8a65e5f6c07b50d5062
