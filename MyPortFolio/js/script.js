@@ -30,6 +30,7 @@ window.addEventListener("scroll", function() {
     });
     
 
+
     circularChartsAbout.forEach(function(chart) {
         if (
             aboutSectionPosition.top < windowHeight &&
