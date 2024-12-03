@@ -11,6 +11,16 @@
   --bg-sec-2: #1d1d1d;
   --bg-dark: #151515;
 }
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+
+
+
 body {
   background-color: #1d1d1d;
   height: 100%;
@@ -43,7 +53,7 @@ section {
 }
 
 .hero {
-  background-image: url("img/hero-bg.png");
+  background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -247,6 +257,12 @@ li.genres {
   flex-direction: column;
 }
 
+.sec2-main button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sec2-main ul {
   list-style-type: none;
   display: flex;
@@ -403,8 +419,7 @@ span {
   font-size: 60px;
   font-style: normal;
   font-weight: 900;
-  line-height: normal;
-  margin-bottom: 0;
+  line-height: normal;;
 }
 
 .logo {
