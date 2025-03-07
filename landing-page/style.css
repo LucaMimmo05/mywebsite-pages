@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --black: #101010;
+  --primary: #2986fe;
+  --second: #f9f9f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 0 7%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--second);
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+}
+
+.nav-links {
+  display: flex;
+
+  & ul {
+    display: flex;
+    gap: 30px;
+
+    & li {
+      list-style: none;
+      font-size: 15px;
+    }
+  }
+}
+
+nav button {
+  background-color: var(--black);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+}
+
+.hero-content {
+    margin: 0 2%;
+}
+
+.hero {
+  background-color: #9d9d9d;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  height: 80vh;
+  padding: 50px;
+  border-radius: 70px;
+  
+}
+
+.clipped-container {
+    background-color: var(--second);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    height: 250px;
+    width: 400px;
+    border-top-left-radius: 70px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 210px;
+        height: 210px;
+        border-radius: 30%;
+        bottom: 0;
+        left: -210px;
+        box-shadow: 70px 70px  var(--second);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 210px;
+        height: 210px;
+        border-radius: 30%;
+        top: -210px;
+        right: 0;
+        box-shadow: 70px 70px  var(--second);
+    }
+}
+
+
