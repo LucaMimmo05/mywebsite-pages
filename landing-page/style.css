@@ -21,7 +21,6 @@ body {
   background-color: var(--second);
 }
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -54,53 +53,206 @@ nav button {
 }
 
 .hero-content {
-    margin: 0 2%;
+  margin: 0 2%;
 }
 
 .hero {
-  background-color: #9d9d9d;
+  align-items: center;
+  background-image: url(img/sky.jpg);
   background-size: cover;
   position: relative;
   display: flex;
   height: 80vh;
   padding: 50px;
   border-radius: 70px;
-  
+}
+
+main {
+  overflow-x: hidden;
 }
 
 .clipped-container {
-    background-color: var(--second);
+  background-color: var(--second);
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  height: 250px;
+  width: 400px;
+  border-top-left-radius: 70px;
+
+  &::after {
+    content: "";
     position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 30%;
+    bottom: 0;
+    left: -210px;
+    box-shadow: 70px 70px var(--second);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 30%;
+    top: -210px;
+    right: 0;
+    box-shadow: 70px 70px var(--second);
+  }
+}
+
+.carousel-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & .circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 0;
-    right: 0;
-    height: 250px;
-    width: 400px;
-    border-top-left-radius: 70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
 
-    &::after {
-        content: "";
-        position: absolute;
-        width: 210px;
-        height: 210px;
-        border-radius: 30%;
-        bottom: 0;
-        left: -210px;
-        box-shadow: 70px 70px  var(--second);
+    & h1 {
+      color: white;
     }
 
-    &::before {
-        content: "";
-        position: absolute;
-        width: 210px;
-        height: 210px;
-        border-radius: 30%;
-        top: -210px;
-        right: 0;
-        box-shadow: 70px 70px  var(--second);
+  }
+
+  & .circle:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+
+    & h1 {
+      color: var(--black);
     }
+  }
 }
 
+.vertical-line {
+  width: 2px; 
+  height: 100px; 
+  background-color: white; 
+}
+
+.left-hero {
+  display: flex;
+  gap: 50px;
+}
+
+.text-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 400px;
+
+  & h1 {
+    font-size: 60px;
+    color: var(--black);
+    letter-spacing: 3px;
+    line-height: 1.2;
+  }
+
+  & p {
+    font-size: 20px;
+    color: var(--black);
+  }
+
+}
+
+.bottom-left-hero {
+  display: flex;
+  gap: 45px;
+  flex-direction: column;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+
+  & button:first-child {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+  }
+
+  & button {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.bottom-hero {
+  background-color: #f1f1f1;
+  backdrop-filter: opacity(0.2);
+  padding: 2rem;
+  height: 200px;
+  width: 375px;
+  z-index: 2;
+  border-radius: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-circles {
+  margin-top: auto;
+  display: flex;
+  width: auto;
+  
+}
+
+.bottom-circle:first-child {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.bottom-circle:nth-child(2), .bottom-circle:nth-child(3) {
+  margin-left: -20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--black);
+  border: 5px solid #f1f1f1;
+}
+
+.airplane {
+  position: absolute;
+  width: 1000px;
+  height: 500px;
+  right: -300px;
+  rotate: -10deg;
+  top: -50px;
+  overflow: hidden;
+  z-index: 3;
+}
 
