@@ -702,3 +702,139 @@ main {
     font-weight: 600;
    }
 }
+
+.sec5 {
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 70px;
+  backdrop-filter: opacity(0.2);
+  border-radius: 50px;
+  background-color: #f1f1f1;
+  color: var(--black);
+  
+}
+
+.about-us-desc {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.descriptions {
+  display: flex;
+}
+
+.description {
+  align-items: center;
+  gap: 20px;
+  width: 600px;
+  display: flex;
+  font-size: 14px;
+  line-height: 1.5;
+  color: gray;
+  font-weight: 500;
+}
+
+.line {
+  width: 20px;
+  height: 100px;
+  background-color: var(--primary);
+}
+
+.sec6 {
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec6-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  backdrop-filter: opacity(0.2);
+  width: 400px;
+  height: 400px;
+  border-radius: 100px;
+
+  & h1 {
+    color: var(--primary);
+    font-size: 120px;
+    font-weight: 400;
+  }
+
+  & p {
+    color: var(--black);
+    font-size: 30px;
+  }
+}
+
+.sec7 {
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+
+  
+}
+
+.sec7-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  
+  & h1 {
+    font-size: 50px;
+    color: var(--black);
+  }
+
+  & p {
+    color: gray;
+    font-weight: 500;
+  }
+}
+
+.sec7-box {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  align-items: center;
+  width: 350px;
+
+  & p {
+    color: gray;
+    font-weight: 400;
+  }
+}
+
+.sec7-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec7-circle {
+  background-color: #f1f1f1;
+  backdrop-filter: opacity(0.2);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
